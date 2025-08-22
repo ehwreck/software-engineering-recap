@@ -20,14 +20,13 @@ The goal of this project is to serve as a reference and learning hub for anyone 
 git clone https://github.com/ehwreck/software-engineering-recap.git
 cd software-engineering-recap
 ```
-2. Navigate into the language or topic folder you’re interested in.
-3. Run the solutions locally (example for Node.js):
+2. Run the solutions locally (example for Node.js):
 ```zsh
-node arrays/two-sum.js
+node data_structures/stacks/stack.js
 ```
 4. Or for Ruby:
 ```zsh
-ruby arrays/two_sum.rb
+ruby data_structures/stacks/stack.rb
 ```
 
 ## 🎯 Goals
