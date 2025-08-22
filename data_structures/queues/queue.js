@@ -21,7 +21,7 @@ console.log("Current queue:", queue);
 
 
 
-// using an array (not optimal - time complexity of O(n) when removing the first item on the queue)
+// using a Linked List (optimal - time complexity of O(1) for enqueing and dequeing)
 console.log("\n-------------------")
 console.log("Linked List Implementation\n")
 
