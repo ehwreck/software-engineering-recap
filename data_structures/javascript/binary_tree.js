@@ -124,3 +124,13 @@ console.log("Example for empty binary tree:", leftMostDepthFirstSearch(null));
 console.log("Example for singleton binary tree:", leftMostDepthFirstSearch(j));
 console.log("Example for degenerate/pathological binary tree:", leftMostDepthFirstSearch(k));
 console.log("Example for left skewed binary tree:", leftMostDepthFirstSearch(n));
+
+// An example of DFS using recursion
+const recursiveDfs = (root) => {
+  if(root === null) return [];
+  const leftValues = recursiveDfs(root.left);
+  const rightValues = recursiveDfs(root.right);
+  return [root.val, ...leftValues, ...rightValues];
+}
+
+console.log("Example for complete binary tree:", recursiveDfs(a));
