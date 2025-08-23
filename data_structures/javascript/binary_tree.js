@@ -103,6 +103,7 @@ p.left = q;
 
 // Our left most depth first order should look like this: [a, b, d, h, i, e, c, f, g]
 
+// Iterative Solution
 const leftMostDepthFirstSearch = (root) =>{
   if(root === null) return [];
   const stack = [root];
@@ -125,7 +126,7 @@ console.log("Example for singleton binary tree:", leftMostDepthFirstSearch(j));
 console.log("Example for degenerate/pathological binary tree:", leftMostDepthFirstSearch(k));
 console.log("Example for left skewed binary tree:", leftMostDepthFirstSearch(n));
 
-// An example of DFS using recursion
+// An example of DFS using recursion (recursion uses the call stack behavior)
 const recursiveDfs = (root) => {
   if(root === null) return [];
   const leftValues = recursiveDfs(root.left);
@@ -134,3 +135,25 @@ const recursiveDfs = (root) => {
 }
 
 console.log("Example for complete binary tree:", recursiveDfs(a));
+
+// BFS
+
+// Iterative solution
+const leftBreathFirstSearch = (root) => {
+  if(root === null) return [];
+
+  const queue = [root];
+  const visited = [];
+
+  while(queue.length > 0){
+    const currentNode = queue.shift();
+    visited.push(currentNode.val);
+
+    if(currentNode.left) queue.push(currentNode.left);
+    if(currentNode.right) queue.push(currentNode.right)
+  }
+
+  return visited;
+}
+
+console.log(leftBreathFirstSearch(a));
