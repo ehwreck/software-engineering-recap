@@ -24,11 +24,11 @@ cd software-engineering-recap
 ```
 2. Run the solutions locally (example for Node.js):
 ```zsh
-node data_structures/stacks/stack.js
+node data_structures/javascript/stack.js
 ```
 4. Or for Ruby:
 ```zsh
-ruby data_structures/stacks/stack.rb
+ruby data_structures/ruby/stack.rb
 ```
 
 ## 🎯 Goals
