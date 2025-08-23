@@ -6,7 +6,9 @@ The goal of this project is to serve as a reference and learning hub for anyone 
 ## 📚 Contents
 
 - Data Structures
-  - Stacks & Queues
+  - Stacks
+  - Queues
+  - Binary Trees
 
 ## 🛠 Languages
 
